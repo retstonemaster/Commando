@@ -21,7 +21,7 @@ if (fs.existsSync(`${__dirname}/data.json`)) {
     appData = require(`${__dirname}/data.json`);
 }
 
-const server = app.listen(&{Port});
+const server = app.listen(${Port});
 const wsServer = new ws.Server({ server: server, path: '/api/ws' });
 
 app.use('/maps', (req, res, next) => {
